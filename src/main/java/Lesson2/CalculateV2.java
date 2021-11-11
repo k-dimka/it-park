@@ -55,8 +55,11 @@ public class CalculateV2 {
             } else if (action == 5) {
                 System.out.println("До новых встреч");
                 System.exit(0);
+            } else if (action > 5) {    /* && странное но двойное условие не работает*/
+                System.out.println("Номер действия не определен");
+            }  else if (action < 1) {
+                System.out.println("Номер действия не определен");
             }
         }
     }
-
 }
