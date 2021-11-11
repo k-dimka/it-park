@@ -45,8 +45,8 @@ public class calculate {
                 if (b == 0) {
                     System.out.println("На 0 делить нельзя! Повторите попытку ввода");
                     Scanner console3 = new Scanner(System.in);
-                    int b1 = console.nextInt();
-                    long answer = division1(a, b1);
+                    b = console.nextInt();
+                    long answer = division1(a, b);
                     System.out.println("Частное чисел равна: " + answer + ". Попробуем еще?");
                 } else {
                     long answer = division(a, b);
