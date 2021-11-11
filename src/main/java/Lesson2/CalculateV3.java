@@ -5,7 +5,7 @@ public class CalculateV3 {
     public static void main(String[] args) {
         while (true) {
             System.out.println("1 - Сложение; 2 - Вычетание; 3 - Умножение; 4 - Деление; 5 - Выход из программы");
-            System.out.println("Введите номер нужного действия");
+            System.out.print("Введите номер нужного действия: ");
             Scanner console = new Scanner(System.in);
             int action = console.nextInt();
             {
@@ -13,10 +13,10 @@ public class CalculateV3 {
                     System.out.println("До новых встреч");
                     System.exit(0);
                 } else {
-                    System.out.println("Введите первое число ");
+                    System.out.print("Введите первое число: ");
                     Scanner console1 = new Scanner(System.in);
                     double a = console.nextDouble();
-                    System.out.println("Введите второе число");
+                    System.out.print("Введите второе число: ");
                     Scanner console2 = new Scanner(System.in);
                     double b = console.nextDouble();
                     if (action == 1) {
@@ -30,7 +30,7 @@ public class CalculateV3 {
                         System.out.println("Произведение чисел равна: " + answer + ". Попробуем еще?");
                     } else if (action == 4) {
                         if (b == 0) {
-                            System.out.println("На 0 делить нельзя! Повторите попытку ввода");
+                            System.out.print("На 0 делить нельзя! Повторите попытку ввода: ");
                             Scanner console3 = new Scanner(System.in);
                             b = console.nextDouble();
                             double answer = a / b;
