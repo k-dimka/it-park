@@ -9,53 +9,53 @@ public class CalculateV2 {
             Scanner console = new Scanner(System.in);
             int action = console.nextInt();
             if (action == 1) {
-                System.out.println("Введите первое целое число");
+                System.out.println("Введите первое число ");
                 Scanner console1 = new Scanner(System.in);
-                int a = console.nextInt();
-                System.out.println("Введите второе целое число");
+                double a = console.nextDouble();
+                System.out.println("Введите второе число");
                 Scanner console2 = new Scanner(System.in);
-                int b = console.nextInt();
-                long answer = a + b;
+                double b = console.nextDouble();
+                double answer = a + b;
                 System.out.println("Сумма чисел равна: " + answer + ". Попробуем еще?");
             } else if (action == 2) {
-                System.out.println("Введите первое целое число");
+                System.out.println("Введите первое число");
                 Scanner console1 = new Scanner(System.in);
-                int a = console.nextInt();
-                System.out.println("Введите второе целое число");
+                double a = console.nextDouble();
+                System.out.println("Введите второе число");
                 Scanner console2 = new Scanner(System.in);
-                int b = console.nextInt();
-                long answer = a - b;
+                double b = console.nextDouble();
+                double answer = a - b;
                 System.out.println("Разность чисел равна: " + answer + ". Попробуем еще?");
             } else if (action == 3) {
-                System.out.println("Введите первое целое число");
+                System.out.println("Введите первое число");
                 Scanner console1 = new Scanner(System.in);
-                int a = console.nextInt();
-                System.out.println("Введите второе целое число");
+                double a = console.nextDouble();
+                System.out.println("Введите второе число");
                 Scanner console2 = new Scanner(System.in);
-                int b = console.nextInt();
-                long answer = a * b;
+                double b = console.nextDouble();
+                double answer = a * b;
                 System.out.println("Произведение чисел равна: " + answer + ". Попробуем еще?");
             } else if (action == 4) {
-                System.out.println("Введите первое целое число");
+                System.out.println("Введите первое число");
                 Scanner console1 = new Scanner(System.in);
-                int a = console.nextInt();
-                System.out.println("Введите второе целое число");
+                double a = console.nextDouble();
+                System.out.println("Введите второе число");
                 Scanner console2 = new Scanner(System.in);
-                int b = console.nextInt();
+                double b = console.nextDouble();
                 if (b == 0) {
                     System.out.println("На 0 делить нельзя! Повторите попытку ввода");
                     Scanner console3 = new Scanner(System.in);
-                    int b1 = console.nextInt();
-                    long answer = a / b1;
+                    double b1 = console.nextDouble();
+                    double answer = a / b1;
                     System.out.println("Частное чисел равна: " + answer + ". Попробуем еще?");
                 } else {
-                    long answer = a / b;
+                    double answer = a / b;
                     System.out.println("Частное чисел равна: " + answer + ". Попробуем еще?");
                 }
             } else if (action == 5) {
                 System.out.println("До новых встреч");
                 System.exit(0);
-            } else if (action > 5) {    /* && странное но двойное условие не работает*/
+            } else if (action > 5) {    /* && странно, но двойное условие не работает*/
                 System.out.println("Номер действия не определен");
             }  else if (action < 1) {
                 System.out.println("Номер действия не определен");
