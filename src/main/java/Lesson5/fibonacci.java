@@ -7,12 +7,12 @@ public class fibonacci {
         System.out.print("Введите число N последовалтельностей:");
         Scanner console = new Scanner(System.in);
         int N = console.nextInt();
-        int a = 1;
+        double a = 1;
         if (N>0) {
-            int b = 1;
+            double b = 1;
             N = N-1;
             while(N>0) {
-                int c = a+b;
+                double c = a + b;
                 N = N-1;
                 a = b;
                 b = c;
