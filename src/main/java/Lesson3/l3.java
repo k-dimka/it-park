@@ -19,8 +19,6 @@ public class l3 {
                     double a = console1.nextDouble();
                     if (a == 0) {
                         System.out.println("Первый коэффициент не может быть 0! У Вас есть шанс начать все сначала.");
-                        /*Scanner console0 = new Scanner(System.in);
-                        a = console1.nextDouble();*/
                     } else {
                         System.out.print("Введите значение для b: ");
                         double b = console1.nextDouble();
