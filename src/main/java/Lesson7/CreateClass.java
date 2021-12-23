@@ -1,6 +1,6 @@
 package Lesson7;
 
-public class createClass {
+public class CreateClass {
     public static void main(String[] args) {
         Animal cat = new Animal();
         cat.type = "cat";

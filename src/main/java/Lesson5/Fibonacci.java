@@ -1,7 +1,7 @@
 package Lesson5;
 
 import java.util.Scanner;
-public class fibonacci {
+public class Fibonacci {
     public static void main(String[] args) {
         System.out.println("Вычисление значения в последовательности Фибоначчи");
         System.out.print("Введите число N последовалтельностей:");

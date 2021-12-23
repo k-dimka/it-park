@@ -1,7 +1,7 @@
 package Lesson2;
 
 import java.util.Scanner;
-public class calculate {
+public class Calculate {
     public static void main(String[] args) {
         while (true) {
             System.out.println("1 - Сложение; 2 - Вычетание; 3 - Умножение; 4 - Деление; 5 - Выход из программы");
