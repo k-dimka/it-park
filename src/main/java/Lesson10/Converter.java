@@ -2,8 +2,9 @@ package Lesson10;
 
 public class Converter {
     public static void main(String[] args) {
-        double val = 1;
-        String param = "K";
+        double val = 1;       //эти данные будут вводится через scaner
+        String param = "K";   //есть мысль реализовать через метод разделение первой и второй части ввода, типа 1.0С принимаем
+        // и используем только букву для условий if
         Convertable converter = new Convert();
         if (param == "C") {
             System.out.print(val + param + " равен ");
