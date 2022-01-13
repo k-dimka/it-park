@@ -4,19 +4,22 @@ public interface Convertable {
 
     default void convertCtoK(double value, String unit){
         unit = "K";
-        value = value + 273.15;
+        value = ((value + 273.15)*100+0.5)/100;  //округляю до сотых в большую сторону
+        value = (Double)Math.floor(value*100)/100.0; //вывожу два символа после запятой
         System.out.println(value+unit);
     }
 
     default void convertCtoF(double value, String unit){
         unit = "F";
-        value = value * 1.8 + 32;
+        value = ((value * 1.8 + 32)*100+0.5)/100;
+        value = (Double)Math.floor(value*100)/100.0;
         System.out.println(value+unit);
     }
 
     default void convertKtoC(double value, String unit){
         unit = "C";
-        value = value - 273.15;
+        value = ((value - 273.15)*100+0.5)/100;
+        value = (Double)Math.floor(value*100)/100.0;
         System.out.println(value+unit);
     }
 
@@ -36,7 +39,8 @@ public interface Convertable {
 
     default void convertKtoF(double value, String unit){
         unit = "F";
-        value = value * 1.8 - 459.67;
+        value = ((value * 1.8 - 459.67)*100+0.5)/100;
+        value = (Double)Math.floor(value*100)/100.0;
         System.out.println(value+unit);
     }
 }
