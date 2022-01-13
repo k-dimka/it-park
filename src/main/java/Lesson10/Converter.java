@@ -12,21 +12,21 @@ public class Converter {
 
             if (param.equals("C")) {
                 System.out.print(val + param + " равен ");
-                converter.convertCtoK(val, param);
+                converter.convertCtoK(val);
                 System.out.print(val + param + " равен ");
-                converter.convertCtoF(val, param);
+                converter.convertCtoF(val);
             }
             if (param.equals("F")) {
                 System.out.print(val + param + " равен ");
-                converter.convertFtoC(val, param);
+                converter.convertFtoC(val);
                 System.out.print(val + param + " равен ");
-                converter.convertFtoK(val, param);
+                converter.convertFtoK(val);
             }
             if (param.equals("K")) {
                 System.out.print(val + param + " равен ");
-                converter.convertKtoC(val, param);
+                converter.convertKtoC(val);
                 System.out.print(val + param + " равен ");
-                converter.convertKtoF(val, param);
+                converter.convertKtoF(val);
             }
         }
     }
