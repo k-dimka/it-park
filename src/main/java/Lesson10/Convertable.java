@@ -1,6 +1,19 @@
 package Lesson10;
 
+import java.util.Scanner;
 public interface Convertable {
+
+    static double inputValue(Double value){
+        Scanner console = new Scanner(System.in);
+        value = console.nextDouble();
+        return value;
+    }
+
+    static String inputUnit(String unit){
+        Scanner console = new Scanner(System.in);
+        unit = console.nextLine();
+        return unit;
+    }
 
     default void convertCtoK(double value, String unit){
         unit = "K";
@@ -43,4 +56,5 @@ public interface Convertable {
         value = (Double)Math.floor(value*100)/100.0;
         System.out.println(value+unit);
     }
+
 }
