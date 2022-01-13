@@ -3,18 +3,6 @@ package Lesson10;
 import java.util.Scanner;
 public interface Convertable {
 
-    static double inputValue(Double value){
-        Scanner console = new Scanner(System.in);
-        value = console.nextDouble();
-        return value;
-    }
-
-    static String inputUnit(String unit){
-        Scanner console = new Scanner(System.in);
-        unit = console.nextLine();
-        return unit;
-    }
-
     default void convertCtoK(double value){
         value = ((value + 273.15)*100+0.5)/100;  //округляю до сотых в большую сторону
         value = (Double)Math.floor(value*100)/100.0; //вывожу два символа после запятой

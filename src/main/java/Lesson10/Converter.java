@@ -6,9 +6,9 @@ public class Converter {
         while (true) {
             Convertable converter = new Convert();
             System.out.print("ввести значение температуры: ");
-            double val = Convertable.inputValue(0.0);
+            double val = Inputable.inputValue(0.0);
             System.out.print("из какой еденицы переводить? С - цельсий, F - Фаренгейт, K - Кельфин: ");
-            String param = Convertable.inputUnit("");
+            String param = Inputable.inputUnit("");
 
             if (param.equals("C")) {
                 System.out.print(val + param + " равен ");
