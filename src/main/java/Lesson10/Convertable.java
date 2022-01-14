@@ -1,6 +1,5 @@
 package Lesson10;
 
-import java.util.Scanner;
 public interface Convertable {
 
     default void convertCtoK(double value){
