@@ -74,21 +74,21 @@ interface GetMoveable extends Modelable, Numberable {
     static double GetMoved(double weight, double height, double width, String model, String namber) {
         try {
             if (weight > 8.0)
-                throw new Exception("Привешение габаритов для проезда через " +
+                throw new Exception("Привешение веса для проезда через " +
                         "КПП, автомобиль " + model + " гос.номер " + namber);
         } catch (Exception e) {
             e.printStackTrace();
         }
         try {
             if (height > 4.0)
-                throw new Exception("Привешение габаритов для проезда через " +
+                throw new Exception("Привешение габаритов высоты для проезда через " +
                         "КПП, автомобиль " + model + " гос.номер " + namber);
         } catch (Exception e) {
             e.printStackTrace();
         }
         try {
             if (width > 2.5)
-                throw new Exception("Привешение габаритов для проезда через " +
+                throw new Exception("Привешение габаритов ширины для проезда через " +
                         "КПП, автомобиль " + model + " гос.номер " + namber);
         } catch (Exception e) {
             e.printStackTrace();
