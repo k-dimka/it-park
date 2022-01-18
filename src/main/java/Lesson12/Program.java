@@ -20,22 +20,22 @@ public class Program {
         };
 
         try {
-            System.out.println("Сумма массива: " + convert(stringArray1)+ Suma(stringArray1));
+            System.out.println("Сумма массива: " + Suma(stringArray4) + convert(stringArray1));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
         try {
-            System.out.println("Сумма массива: " + convert(stringArray2) + Suma(stringArray2));
+            System.out.println("Сумма массива: " + Suma(stringArray4)+ convert(stringArray2));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
         try {
-            System.out.println("Сумма массива: " + convert(stringArray3) + Suma(stringArray3));
+            System.out.println("Сумма массива: " + Suma(stringArray4) + convert(stringArray3));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
         try {
-            System.out.println("Сумма массива: " + convert(stringArray4) + Suma(stringArray4));
+            System.out.println("Сумма массива: " + Suma(stringArray4) + convert(stringArray4));
         } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e);
         }
