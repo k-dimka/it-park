@@ -41,7 +41,7 @@ public class Program {
         }
     }
 
-    private static int convert(String[][] in) throws MyArraySizeException, MyArrayDataException {
+    private static int convert(String[][] in) throws MyArraySizeException {
 
         if (in.length != 4) {
             throw new MyArraySizeException(String.format("Массив должен быть 4х4."));
@@ -54,7 +54,7 @@ public class Program {
         return 0;
     }
 
-    private static int Suma(String[][] in) throws MyArraySizeException, MyArrayDataException {
+    private static int Suma(String[][] in) throws MyArrayDataException {
 
         int suma = 0;
 
