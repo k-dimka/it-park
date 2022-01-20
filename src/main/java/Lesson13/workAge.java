@@ -20,8 +20,8 @@ public class workAge {
 
         if ((nowDate - Age) >= stDate) {  //проверяю стаж больше или рано подходит
             experience = true;
-        } /*else if ((nowDate - Age) < stDate) { //меньше не подходит
+        } else if ((nowDate - Age) < stDate) { //меньше не подходит
             experience = false;
-        }*/
+        }
     }
 }
