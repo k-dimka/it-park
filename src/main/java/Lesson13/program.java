@@ -8,7 +8,6 @@ public class program {
 
     public static void main(String[] args) {
         while (true) {
-            workAge workingAge = new workAge();
             List<Employee> employees = new ArrayList<>();
             employees.add(new Employee(1, "Иванов Иван Иванович", "21.01.2014"));
             employees.add(new Employee(2, "Абрамова Иванка Серофимовна", "12.05.1996"));
@@ -24,6 +23,7 @@ public class program {
             System.out.print("Ввести желаемы стаж работы сотрудника для поиска: ");
             Scanner console = new Scanner(System.in);
             int age = console.nextInt();
+            workAge workingAge = new workAge();
             List<Employee> newEmploees = new ArrayList<>();
             for (Employee list : employees) {                   //сотрудников с нужным стажем добавляем в новую коллекцию
                 workingAge.experience(list.getStartWork(), age);
